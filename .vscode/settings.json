@@ -15,5 +15,8 @@
 	"files.autoSave": "off",
 	"workbench.colorTheme": "Ayu Mirage Bordered",
 	"terminal.integrated.gpuAcceleration": "auto",
-
+	"[html]": {
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "vscode.html-language-features"
+	}
 }
