@@ -27,6 +27,13 @@ h2 {
 	border-radius: 0;
 }
 
+.mid-blue {
+	background-color: #1f7798; /* mid-blue */
+}
+.mid-blue:hover {
+	background-color: #1d6d8a; /* what */
+}
+
 /* Hero section */
 
 #hero {
