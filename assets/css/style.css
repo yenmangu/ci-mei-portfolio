@@ -1,0 +1,80 @@
+/*
+    #a4c2d1; egg blue
+    #dbdcde; light grey
+    #1f7798; mid-blue
+    #184f63; dark-blue
+*/
+
+/* global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #a4c2d1; /* egg blue*/
+}
+h1,
+h2 {
+	font-family: 'DM Serif Display', serif;
+	color: #184f63; /* dark-blue */
+}
+
+/* Utilities */
+
+/* The wild card here ensures all descendants inherit the border-radius */
+.sharp-corners,
+.sharp-corners * {
+	border-radius: 0;
+}
+
+/* Hero section */
+
+#hero {
+	background: url('../images/background.webp') no-repeat 50% 70% / cover;
+	/* Fallback background color, incase image does not load */
+	background-color: #dbdcde; /* light grey */
+	min-height: 500px;
+	padding: 5% 7%;
+}
+
+/* About section */
+
+#about {
+	background-color: #ffffff;
+}
+
+/* Portfolio */
+
+#portfolio {
+	background-color: #dbdcde; /* light grey */
+}
+
+#portfolio .card-title {
+	color: #1f7798; /* mid blue */
+	font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover {
+	background-color: #1f7798;
+}
+
+#portfolio .card-text {
+	min-height: 120px;
+}
+
+/* Contact */
+
+#contact {
+	background-color: #ffffff;
+}
+
+/* Media queries */
+
+/* Use bootstrap breakpoint for XL screens */
+
+@media screen and (min-width: 1200px) {
+	/* Fixes all portfolio cards being too tall on xl screens */
+	#portfolio .card-text {
+		min-height: auto;
+	}
+}
